@@ -1,3 +1,9 @@
+%define major 0
+%define libdispatch %mklibname dispatch %{major}
+%define libBlocksRuntime %mklibname BlocksRuntime %{major}
+%define devname %mklibname dispatch -d
+
+
 Name:		libdispatch
 Version:	5.5
 Release:	1

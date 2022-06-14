@@ -11,7 +11,7 @@ Summary:	Apple's Grand Central Dispatch library
 Group:		System/Libraries
 License:	ASL 2.0
 URL:		https://github.com/apple/swift-corelibs-libdispatch
-Source0:	https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-%{version}-RELEASE.tar.gz
+Source0:	https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/sswift-corelibs-libdispatch-swift-%{version}-RELEASE.tar.gz
 Patch0:		asprintf.patch
 Patch1:		libdispatch-versioning.patch
 BuildRequires:	clang
@@ -86,7 +86,7 @@ Development files for libdispatch
 #-------------------------------------------------------------
 
 %prep
-%autosetup -p1 -n swift-corelibs-libdispatch-swift-%{reltag}
+%autosetup -p1 -n swift-corelibs-libdispatch-swift-%{version}-RELEASE
 
 %build
 export CC=/usr/bin/clang CXX=/usr/bin/clang++

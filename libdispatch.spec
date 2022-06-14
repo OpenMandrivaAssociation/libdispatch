@@ -1,11 +1,11 @@
 Name:		libdispatch
-Version:	5.3.3
-Release:	2
+Version:	5.5
+Release:	1
 Summary:	Apple's Grand Central Dispatch library
 Group:		System/Libraries
 License:	ASL 2.0
 URL:		https://github.com/apple/swift-corelibs-libdispatch
-Source0:	https://github.com/apple/swift-corelibs-libdispatch/archive/swift-%{reltag}.tar.gz#/corelibs-libdispatch.tar.gz
+Source0:	https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-%{version}-RELEASE.tar.gz
 Patch0:		asprintf.patch
 Patch1:		libdispatch-versioning.patch
 BuildRequires:	clang

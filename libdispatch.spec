@@ -89,7 +89,8 @@ Development files for libdispatch
 %autosetup -p1 -n swift-corelibs-libdispatch-swift-%{version}-RELEASE
 
 %build
-export CC=/usr/bin/clang CXX=/usr/bin/clang++
+export CC=gcc
+export CXX=g++
 %cmake -G Ninja
 %ninja_build
 

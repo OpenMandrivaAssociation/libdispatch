@@ -5,7 +5,7 @@
 
 
 Name:		libdispatch
-Version:	5.5
+Version:	5.10.1
 Release:	1
 Summary:	Apple's Grand Central Dispatch library
 Group:		System/Libraries
@@ -89,11 +89,11 @@ Development files for libdispatch
 %autosetup -p1 -n swift-corelibs-libdispatch-swift-%{version}-RELEASE
 
 %build
-export CC=/usr/bin/clang CXX=/usr/bin/clang++
-%cmake -G Ninja
-%ninja_build
+#export CC=/usr/bin/clang CXX=/usr/bin/clang++
+%cmake
+%make_build
 
 
 %install
-%ninja_install -C build
+%make_install -C build
 chrpath --delete %{buildroot}%{_libdir}/libdispatch.so
